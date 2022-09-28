@@ -1,0 +1,271 @@
+body {
+  font-family: "Lato";
+  color: #424551;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+/* ================================================= */
+
+header {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  opacity: 0.2;
+}
+
+.header__container h2 {
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* ============ layout ============ */
+
+.layout_one {
+  max-width: 600px;
+  margin-bottom: 66px;
+}
+
+.layout__h1 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin-bottom: 40px;
+}
+
+.layout__text {
+  width: 600px;
+  line-height: 160%;
+  margin-bottom: 48px;
+}
+
+.layout__h3 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: #1e212c;
+  margin-bottom: 24px;
+}
+
+.page__ul {
+  margin-bottom: 24px;
+}
+
+.page__ul li {
+  color: #424551;
+  line-height: 160%;
+  padding-left: 32px;
+  background: url("../img/icons/Vector.jpg") 0 6px no-repeat;
+}
+
+.layout_two {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+
+.layout__h6 {
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #1e212c;
+  margin-bottom: 8px;
+}
+
+.layout_two_text {
+  color: #787a80;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.layout_two p:first-of-type {
+  color: #787a80;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+
+.layout_two__ul {
+  font-weight: 700;
+  line-height: 25.6px;
+  color: #424551;
+  margin-bottom: 32px;
+}
+
+.layout_two__ul li:nth-child(1)::before {
+  display: inline-block;
+  background: url(../img/icons/Vector_1.jpg) 0 0 no-repeat;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.layout_two__ul li:nth-child(2)::before {
+  display: inline-block;
+  background: url(../img/icons/Vector_2.jpg) 0 0 no-repeat;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.layout_two__ul li:nth-child(3)::before {
+  display: inline-block;
+  background: url(../img/icons/Vector_3.jpg) 0 0 no-repeat;
+  content: "";
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.layout_two__ul + p {
+  line-height: 160%;
+  color: #424551;
+  margin-bottom: 40px;
+}
+
+/* ============ Lesson 8 ============ */
+
+[class*="__practica"] {
+  margin-bottom: 20px;
+}
+
+.practica__h2 {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  align-items: center;
+  text-align: center;
+  color: #1e212c;
+  margin-bottom: 16px;
+}
+
+.practica__h3 {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.practica__links {
+  font-size: 20px;
+  font-weight: 500;
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.practica__list li {
+  margin-bottom: 20px;
+}
+
+/* Колір посилань при наведенні на них курсора миші */
+.practica__hover:hover {
+  color: green;
+}
+/* Колір активних посилань */
+.practica__active:active {
+  color: blue;
+}
+/* Колір відвіданих посилань */
+.practica__visited:visited {
+  color: #606;
+}
+
+.practica__focus:focus {
+  outline: 1px solid red;
+}
+
+/* ================================== */
+
+.practica__text {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.practica__text::before {
+  display: inline-block;
+  content: "";
+  background: url(../img/icons/Vector_1.jpg) 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  content: "";
+}
+
+.practica__text::after {
+  display: inline-block;
+  content: "";
+  background: url(../img/icons/Vector_2.jpg) 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  content: "";
+  margin-right: 10px;
+}
+
+/* в two__practica */
+
+.two__practica p::first-letter {
+  color: red;
+  font-size: 130%;
+}
+
+.two__practica p::first-letter {
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 red;
+  font-size: 250%;
+  padding: 6px 3px;
+  margin-right: 6px;
+}
+
+/* ================================== */
+
+.practica_punckt {
+  color: red;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.practica_punckt ul {
+  counter-reset: item;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.practica_punckt ol ul {
+  display: none;
+}
+
+.practica_punckt ol:hover ul {
+  display: block;
+}
+
+.practica_punckt ol li::before {
+  counter-increment: item;
+  content: counter(item) ". ";
+  display: inline-block;
+  margin-right: 5px;
+  color: green;
+}
+
+.practica_punckt ol li:not(:last-child) {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+ol li:hover::before {
+  transition: all 0.8s ease 0s;
+  transform: scale(1.5);
+}
+
+/* ================================== */
